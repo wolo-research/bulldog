@@ -1,0 +1,28 @@
+{
+  "daemon": true,
+  "blueprint": {
+    "disk" : true,
+    "strategy_prefix": [
+      "upoker-p_nlh2_200bb_cfrs_r0_40000000",
+      "upoker-p_nlh2_150bb_cfrs_r0_30000000",
+      "upoker-p_nlh2_100bb_cfrs_r0_30000000",
+      "upoker-p_nlh2_65bb_cfrs_r0_30000000",
+      "upoker-p_nlh2_30bb_cfrs_r0_50000000"
+    ],
+    "action_chooser": {
+      "purification": false,
+      "fold_threshold": 0.80,
+      "pot_allin_threshold": 0.4,
+      "prune_threshold": 0.05
+    }
+  },
+  "subgame_solvers": [
+    "sgs_r1_upoker-p_bigpot.json",
+    "sgs_r2_upoker-p_bigpot.json",
+    "sgs_r2_upoker-p_midpot.json",
+    "sgs_r2_upoker-p_0pot.json",
+    "sgs_r3_upoker-p_bigpot.json",
+    "sgs_r3_upoker-p_midpot.json",
+    "sgs_r3_upoker-p_0pot.json"
+  ]
+}

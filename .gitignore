@@ -1,0 +1,59 @@
+# Ignore CLion and Cmake
+.idea
+.vs
+.ipynb_checkpoints
+cmake-build-*
+Debug
+
+dump/*
+log/*
+*.log
+*.std
+*.err
+
+# Ignore the build and lib dirs
+build
+run
+logs
+
+# Ignore any executables
+bin
+
+# Ignore Mac specific files
+.DS_Store
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.x
+
+3rdparty/libtorch

@@ -1,0 +1,15 @@
+[submodule "3rdparty/Catch2"]
+	path = 3rdparty/Catch2
+	url = https://github.com/catchorg/Catch2.git
+	branch = master
+[submodule "3rdparty/cxxopts"]
+	path = 3rdparty/cxxopts
+	url = https://github.com/jarro2783/cxxopts.git
+	branch = master
+[submodule "3rdparty/spdlog"]
+	path = 3rdparty/spdlog
+	url = https://github.com/gabime/spdlog.git
+	branch = v1.x
+[submodule "3rdparty/cereal"]
+	path = 3rdparty/cereal
+	url = https://github.com/USCiLab/cereal.git

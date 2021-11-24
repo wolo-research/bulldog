@@ -1,0 +1,18 @@
+{
+  "cfr": {
+    "num_threads": 1,
+    "algo": "vector_alt",
+    "regret_matching": {
+      "floor" : 0.0,
+      "avg_update_on": 0,
+      "discounting": {
+        "first_iter": 50000,
+        "iterations": 10,
+        "interval": 50
+      }
+    },
+    "convergence": {
+      "max_iter": 3000
+    }
+  }
+}

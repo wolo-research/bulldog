@@ -1,0 +1,34 @@
+{
+  "cfr": {
+    "name": "dummy",
+    "num_threads": 1,
+    "algo": "scalar",
+    "convergence": {
+      "max_iter": 10000
+    },
+    "checkpoint": {
+      "profiler": {
+        "interval": 500,
+        "steps": 1
+      },
+      "save_final": true,
+      "save_root_prob": true
+    },
+    "rollout": {
+      "pruning":{
+        "regret_thres": 0.95,
+        "prob": 0.95,
+        "first_iter": 20000
+      }
+    },
+    "regret_matching": {
+      "discounting" : {
+        "first_iter": 988880,
+        "iterations": 50,
+        "interval": 50
+      },
+      "floor" : -200,
+      "avg_update_on": 0
+    }
+  }
+}

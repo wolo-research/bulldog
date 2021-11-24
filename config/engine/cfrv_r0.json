@@ -1,0 +1,33 @@
+{
+  "cfr": {
+    "name": "cfrv_v9",
+    "num_threads": 1,
+    "algo": "vector_alt",
+    "convergence": {
+      "max_iter": 500000
+    },
+    "checkpoint": {
+      "strategy_checkpoint": 50000,
+      "profiler": {
+        "interval": 10000,
+        "steps": 200
+      }
+    },
+    "rollout": {
+      "pruning": {
+        "regret_thres": 0.95,
+        "prob": 0.90,
+        "first_iter": 400000000000000
+      }
+    },
+    "regret_matching": {
+      "floor": 0.0,
+      "avg_update_on": 5000,
+      "discounting": {
+        "first_iter": 1000,
+        "iterations": 50,
+        "interval": 1000
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "solver_name": "bullog_v2",
+  "daemon": false,
+  "blueprint": {
+    "disk_lookup" : true,
+    "strategy_prefix": [
+      "dummy_dummy_100"
+    ],
+    "action_chooser": {
+      "purification": false,
+      "fold_threshold": 1.0,
+      "aggression_factor": 0.0,
+      "prune_threshold": 0.0
+    }
+  },
+  "subgame_solvers": [
+  ]
+}

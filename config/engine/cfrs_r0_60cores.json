@@ -1,0 +1,33 @@
+{
+  "cfr": {
+    "name": "cfrs_v5",
+    "num_threads": 120,
+    "algo": "scalar",
+    "convergence": {
+      "max_iter": 100000000
+    },
+    "checkpoint": {
+      "strategy_checkpoint": 10000000,
+      "profiler": {
+        "interval": 2000000,
+        "steps": 240
+      }
+    },
+    "rollout": {
+      "pruning": {
+        "regret_thres": 0.95,
+        "prob": 0.95,
+        "first_iter": 10000000
+      }
+    },
+    "regret_matching": {
+      "floor": -10000.0,
+      "avg_update_on": 500000,
+      "discounting": {
+        "first_iter": 600000,
+        "iterations": 50,
+        "interval": 100000
+      }
+    }
+  }
+}

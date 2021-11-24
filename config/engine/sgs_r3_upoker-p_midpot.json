@@ -1,0 +1,20 @@
+{
+  "builder_file": "builder_r3_upoker-p_nlh2_200bb_midpot.json",
+  "cfr_file": "cfrv_r3_upoker-p_midpot.json",
+  "playing_strategy" : "wavg",
+  "trigger": {
+    "active_round": 3,
+    "active_sumpot_min": 1500,
+    "active_offtree_min": 10000000,
+    "active_bet_seq_min": 1000000,
+    "resolve_sumpot_min": 1500,
+    "resolve_offtree_min": 200,
+    "resolve_last_root_sumpot_min" : 150000
+  },
+  "action_chooser": {
+    "purification": false,
+    "fold_threshold": 0.7,
+    "pot_allin_threshold": 0.4,
+    "prune_threshold": 0.08
+  }
+}

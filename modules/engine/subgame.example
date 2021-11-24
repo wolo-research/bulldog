@@ -1,0 +1,34 @@
+```
+all of these are included as test case already.
+the following works:
+
+STATE:0:cc/:9c2d|2s3d/7s8s9s
+STATE:0:cc/c:9c2d|2s3d/7s8s9s
+STATE:0:cc/cc:2c2d|2s3d/7s8s9s/3d
+STATE:0:cc/cr300:9c2d|2s3d/7s8s9s
+STATE:0:cc/cc/cc/cr300:Tc2d|2s3d/7s8s9s/5c/6c
+
+//game already finished. cant not build subgame. but real game state function works fine.
+STATE:0:f:9c2d|2s3d
+STATE:0:cc/cc/cc/cr300f:Tc2d|2s3d/7s8s9s/5c/6c
+STATE:0:cc/cc/cc/cr300c:Tc2d|2s3d/7s8s9s/5c/6c
+```
+
+STATE:0:cc/cf:Tc2d|2s3d/7s8s9s   
+(exit on invalid action, cuz all players fold and doAction is after. no such action in betting tree).
+
+STATE:0:cc/cr300:10c2d|2s3d/7s8s9s 
+(exit on reading board cards. 10 is not valid. Should be T, this work STATE:0:cc/cr300:Tc2d|2s3d/7s8s9s
+
+STATE:0:cc/cc:2c2d|2s3d/7s8s9s 
+(should be round 2 already. deal one more card. STATE:0:cc/cc:2c2d|2s3d/7s8s9s/7c works)
+
+
+
+// example of match state, essentially just replace state with match state, then add a viewing position before that. like this.
+
+MATCHSTATE:0
+
+MATCHSTATE:0:0:cc/cc:2c2d|2s3d/7s8s9s/3d
+
+MATCHSTATE:0:0:cc/cc/cr300r1500c/r3000r9000:2c2d|2s3d/7s8s9s/3d/6d

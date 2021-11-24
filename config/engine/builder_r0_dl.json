@@ -1,0 +1,21 @@
+{
+  "ag_builder": {
+    "game_file": "holdem.nolimit.2p.game",
+    "action_abs":{
+      "raise_mode": [
+        "after_call",
+        "after_call",
+        "after_call",
+        "after_call"
+      ],
+      "version": "v1",
+      "ratios":  [
+        [[0.5, 1.0],[0.5, 1.0, -1],[0.5, 1.0,-1],[0.5, 1.0,-1],[0.5,1.0, -1],[1.0,-1]],
+        [[0.5,1.0],[0.5,1.0]],
+        [[0.5,1.0]],
+        [[0.5,1.0]]
+      ]
+    },
+    "card_abs": ["colex", "buckets_200_2_3", "buckets_200_2_4", "buckets_200_2_5"]
+  }
+}

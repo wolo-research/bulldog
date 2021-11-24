@@ -1,0 +1,38 @@
+{
+  "cfr": {
+    "name": "cfrs_v1_dl",
+    "num_threads": 12,
+    "algo": "scalar",
+    "depth_limited": {
+      "on" : true,
+      "reps": 100,
+      "cache" : false
+    },
+    "depth_limited_reps": 20,
+    "convergence": {
+      "max_iter": 1000
+    },
+    "checkpoint": {
+      "profiler": {
+        "interval": 100,
+        "steps": 100
+      }
+    },
+    "rollout": {
+      "pruning": {
+        "regret_thres": 0.95,
+        "prob": 0.95,
+        "first_iter": 300000000000
+      }
+    },
+    "regret_matching": {
+      "floor": -10000.0,
+      "avg_update_on": 0,
+      "discounting": {
+        "first_iter": 10000000,
+        "iterations": 50,
+        "interval": 10000
+      }
+    }
+  }
+}

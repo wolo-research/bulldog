@@ -1,0 +1,55 @@
+{
+  "ag_builder": {
+    "game_file": "nlh2_30bb.game",
+    "action_abs":[{
+      "version": "v1",
+      "raise_mode": "net_or_x",
+      "raise_config": [
+        {"mode": "x","ratio": 2.0, "begin": 0, "end": 2},
+        {"mode": "x","ratio": 2.5, "begin": 0, "end": 0},
+        {"mode": "x","ratio": 3.0, "begin": 0, "end": 3},
+        {"mode": "x","ratio": 4.0, "begin": 0, "end": 2},
+        {"mode": "x","ratio": -1.0, "begin": 1, "end": 4}
+      ]
+    },
+      {
+        "version": "v1",
+        "raise_mode": "net_or_x",
+        "raise_config": [
+          {"mode": "net","ratio": 0.25, "begin": 0, "end": 1},
+          {"mode": "net","ratio": 0.5, "begin": 0, "end": 1},
+          {"mode": "net","ratio": 0.66, "begin": 0, "end": 1},
+          {"mode": "net","ratio": 1.0, "begin": 0, "end": 1},
+          {"mode": "net","ratio": -1.0, "begin": 0, "end": 1},
+          {"mode": "x","ratio": 2.0, "begin": 0, "end": 2},
+          {"mode": "x","ratio": 3.0, "begin": 0, "end": 3},
+          {"mode": "x","ratio": 4.0, "begin": 0, "end": 2},
+          {"mode": "x","ratio": -1.0, "begin": 0, "end": 4}
+        ]
+      },
+      {
+        "version": "v1",
+        "raise_mode": "net_or_x",
+        "raise_config": [
+          {"mode": "net","ratio": 0.25, "begin": 0, "end": 1},
+          {"mode": "net","ratio": 0.5, "begin": 0, "end": 1},
+          {"mode": "net","ratio": 0.66, "begin": 0, "end": 1},
+          {"mode": "net","ratio": 1.0, "begin": 0, "end": 1},
+          {"mode": "net","ratio": -1.0, "begin": 0, "end": 1},
+          {"mode": "x","ratio": 3.0, "begin": 0, "end": 3},
+          {"mode": "x","ratio": -1.0, "begin": 0, "end": 3}
+        ]
+      },
+      {
+        "version": "v1",
+        "raise_mode": "net_or_x",
+        "raise_config": [
+          {"mode": "net","ratio": 1.0, "begin": 0, "end": 1},
+          {"mode": "net","ratio": -1.0, "begin": 0, "end": 1},
+          {"mode": "x","ratio": 3.0, "begin": 0, "end": 3},
+          {"mode": "x","ratio": -1.0, "begin": 0, "end": 3}
+        ]
+      }],
+    "card_abs": ["colex","hier_colex","hierarchical_60_2500_2","hierarchical_60_500_3"]
+  }
+}

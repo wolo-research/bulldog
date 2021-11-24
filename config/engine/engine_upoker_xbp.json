@@ -1,0 +1,21 @@
+{
+  "solver_name": "engine_blueprint",
+  "daemon": false,
+  "blueprint": {
+    "disk" : true,
+    "strategy_prefix": [
+      "upoker-p_nlh2_200bb_cfrs_r0_10000000",
+      "upoker-p_nlh2_150bb_cfrs_r0_10000000",
+      "upoker-p_nlh2_100bb_cfrs_r0_10000000",
+      "upoker-p_nlh2_65bb_cfrs_r0_10000000"
+    ],
+    "action_chooser": {
+      "purification": false,
+      "fold_threshold": 1.0,
+      "aggression_factor": 0.0,
+      "prune_threshold": 0.02
+    }
+  },
+  "subgame_solvers": [
+  ]
+}

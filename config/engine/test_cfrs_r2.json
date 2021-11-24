@@ -1,0 +1,32 @@
+{
+  "cfr": {
+    "name": "dummy_r3_wavg_scalar_",
+    "num_threads": 12,
+    "algo": "scalar",
+    "regret_matching": {
+      "floor": -10000.0,
+      "avg_update_on": 1000,
+      "discounting": {
+        "first_iter": 100,
+        "iterations": 50,
+        "interval": 100
+      }
+    },
+    "checkpoint": {
+      "profiler": {
+        "interval": 500,
+        "steps": 10
+      }
+    },
+    "rollout": {
+      "pruning": {
+        "regret_thres": 0.95,
+        "prob": 0.90,
+        "first_iter": 2000
+      }
+    },
+    "convergence": {
+      "max_iter": 10000
+    }
+  }
+}

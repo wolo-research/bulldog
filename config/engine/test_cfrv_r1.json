@@ -1,0 +1,32 @@
+{
+  "cfr": {
+    "name": "dummy_r23_wavg_vector",
+    "num_threads": 8,
+    "algo": "vector_alt",
+    "regret_matching": {
+      "floor" : -500,
+      "avg_update_on": 0,
+      "discounting": {
+        "first_iter": 0,
+        "iterations": 50,
+        "interval": 20
+      }
+    },
+    "checkpoint": {
+      "profiler": {
+        "interval": 20,
+        "steps": 10
+      }
+    },
+    "rollout": {
+      "pruning": {
+        "regret_thres": 0.95,
+        "prob": 0.90,
+        "first_iter": 5000000
+      }
+    },
+    "convergence": {
+      "max_iter": 10000
+    }
+  }
+}
